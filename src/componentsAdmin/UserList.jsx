@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 
-const API_URL = import.meta.env.API_URL; // URL API
+const API_URL = process.env.REACT_APP_API_URL; // URL API
 
 const UserList = () => { 
   const [users, setUsers] = useState([]);
