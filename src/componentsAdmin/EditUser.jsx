@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useCallback, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
-const API_URL = "/api/users"; // URL API
+const API_URL = import.meta.env.API_URL;  // URL API
 
 const EditUser = () => {
   const [name, setName] = useState("");
